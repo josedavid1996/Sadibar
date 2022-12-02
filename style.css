@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@font-face {
+  font-family: 'roboto-black';
+  src: url('/assets/font/Roboto-Black.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'roboto-black';
+  src: url('/assets/font/Roboto-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'roboto-black';
+  src: url('/assets/font/Roboto-Medium.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'roboto-black', sans-serif;
+  padding: 20px;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+.header__acordeon {
+  border-left: 1px solid #d7dbf5;
+  width: 251px;
+}
+
+.title-select {
+  color: #e73b34;
+  border-left: 2px solid #e73b34;
+}
+.icon-red {
+  color: #e73b34;
+}
+.titles {
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding-left: 27px;
+  cursor: pointer;
+  transform: translateX(-2px);
+  display: block;
+  margin-bottom: 8px;
+}
+.list-text {
+  display: block;
+  padding-left: 27px;
+  transition: display 2s;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #040403;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.container__sub-title {
+  margin-bottom: 8px;
+}
+.container__space-left {
+  padding-left: 12px;
+}
+.text {
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #040403;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+.text-title {
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #040403;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+
+/* UTLIS */
+.text-red {
+  color: #e73b34;
+}
+.mb {
+  margin-bottom: 28px;
+}
+.icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  .is-active {
+    display: block;
+    transition: display 2s;
+  }
+}
+.group-text-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.is-active {
+  display: block;
+  transition: display 2s;
+}
+@media screen and (min-width: 400px) {
+  .md-title {
+    color: #e73b34;
+    border-left: 2px solid #e73b34;
+  }
+  .icon {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+}
