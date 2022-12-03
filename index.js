@@ -213,8 +213,6 @@ $titlePrincipalesIcon.addEventListener('click', () => {
 
 // Desplegable de ¿Cómo denunciar un acto de corrupción?
 $titleDenuciarIcon.addEventListener('click', () => {
-  console.log('hola')
-
   $contentsTitleDenuciar.classList.toggle('is-active')
   $titleDenunciar.classList.toggle('title-select')
   $titleDenuciarIcon.classList.toggle('icon-red')
@@ -248,6 +246,14 @@ $titleEntidadesIcon.addEventListener('click', () => {
   $contentsTitleSecond.classList.remove('is-active')
   $titleSecond.classList.remove('title-select')
   $titleSecondIcon.classList.remove('icon-red')
+
+  $contentsTitleDenuciar.classList.remove('is-active')
+  $titleDenunciar.classList.remove('title-select')
+  $titleDenuciarIcon.classList.remove('icon-red')
+
+  $contentsTitlePrincipales.classList.remove('is-active')
+  $titlePrincipal.classList.remove('title-select')
+  $titlePrincipalesIcon.classList.remove('icon-red')
 })
 
 // Desplegable de Efectos de la corrupción
