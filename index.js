@@ -214,7 +214,8 @@ $titlePrincipalesIcon.addEventListener('click', () => {
 // Desplegable de ¿Cómo denunciar un acto de corrupción?
 $titleDenuciarIcon.addEventListener('click', () => {
   console.log('hola')
-  $contentsTitleDenuciar.classList.toggle('active')
+
+  $contentsTitleDenuciar.classList.toggle('is-active')
   $titleDenunciar.classList.toggle('title-select')
   $titleDenuciarIcon.classList.toggle('icon-red')
 
@@ -233,10 +234,6 @@ $titleDenuciarIcon.addEventListener('click', () => {
   $contentsTitleEntidades.classList.remove('is-active')
   $titleEntidades.classList.remove('title-select')
   $titleEntidadesIcon.classList.remove('icon-red')
-
-  $contentsTitleDenuciar.classList.remove('is-active')
-  $titleDenunciar.classList.remove('title-select')
-  $titleDenuciarIcon.classList.remove('icon-red')
 })
 // Desplegable de Entidades del sistema de administración de justicia
 $titleEntidadesIcon.addEventListener('click', () => {
