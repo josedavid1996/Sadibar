@@ -27,6 +27,30 @@ const $contentsTitleConfianza = document.getElementById(
 )
 const $titleEsferasIcon = document.getElementById('title-esferas-icon')
 const $contentsTitleEsfera = document.getElementById('contents-title-esfera')
+const $titleConceptoIcon = document.getElementById('title-concepto-icon')
+const $contentsTitleConcepto = document.getElementById(
+  'contents-title-concepto'
+)
+const $titleActivoGenericoIcon = document.getElementById(
+  'title-activo-generico-icon'
+)
+const $contentsTitleActivoGenerico = document.getElementById(
+  'contents-title-activo-generico'
+)
+const $titlePropioIcon = document.getElementById('title-propio-icon')
+const $contentsTitlePropio = document.getElementById('contents-title-propio')
+
+const $titleConcusionIcon = document.getElementById('title-concusion-icon')
+const $contentsTitleConcusion = document.getElementById(
+  'contents-title-concusion'
+)
+
+const $titleConceptoConcusionIcon = document.getElementById(
+  'title-concepto-concusion-icon'
+)
+const $contentsTitleConceptoConcusion = document.getElementById(
+  'contents-title-concepto-concusion-'
+)
 
 // Desplegable de Concepto generales
 $titleFirstIcon.addEventListener('click', () => {
@@ -63,9 +87,9 @@ $titleCohechoIcon.addEventListener('click', () => {
   $contentsTitleCohecho.classList.toggle('is-active')
 })
 // Desplegable de Presentacion
-$titlePresentacionIcon.addEventListener('click', () => {
-  $contentsTitlePresentacion.classList.toggle('is-active')
-})
+// $titlePresentacionIcon.addEventListener('click', () => {
+//   $contentsTitlePresentacion.classList.toggle('is-active')
+// })
 
 // Desplegable de En la confianza en las instituciones políticas
 $titleConfianzaIcon.addEventListener('click', () => {
@@ -75,4 +99,24 @@ $titleConfianzaIcon.addEventListener('click', () => {
 // Desplegable En otras esferas
 $titleEsferasIcon.addEventListener('click', () => {
   $contentsTitleEsfera.classList.toggle('is-active')
+})
+// Desplegable En otras Concepto
+$titleConceptoIcon.addEventListener('click', () => {
+  $contentsTitleConcepto.classList.toggle('is-active')
+})
+//  Desplegable de Artículo 397. Cohecho activo genérico
+$titleActivoGenericoIcon.addEventListener('click', () => {
+  $contentsTitleActivoGenerico.classList.toggle('is-active')
+})
+// Desplegable Artículo 393. Cohecho pasivo propio
+$titlePropioIcon.addEventListener('click', () => {
+  $contentsTitlePropio.classList.toggle('is-active')
+})
+//  Desplegable Concepto concusion
+$titleConceptoConcusionIcon.addEventListener('click', () => {
+  $contentsTitleConceptoConcusion.classList.toggle('is-active')
+})
+//  Desplegable Concusion
+$titleConcusionIcon.addEventListener('click', () => {
+  $contentsTitleConcusion.classList.toggle('is-active')
 })
