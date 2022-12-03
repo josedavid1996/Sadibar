@@ -49,17 +49,120 @@ const $titleConceptoConcusionIcon = document.getElementById(
   'title-concepto-concusion-icon'
 )
 const $contentsTitleConceptoConcusion = document.getElementById(
-  'contents-title-concepto-concusion-'
+  'contents-title-concepto-concusion'
+)
+const $titlePeculadoIcon = document.getElementById('title-peculado-icon')
+const $contentsTitlePeculado = document.getElementById(
+  'contents-title-peculado'
+)
+const $titleConceptoPeculadoIcon = document.getElementById(
+  'title-concepto-peculado-icon'
+)
+const $contentsTitleConceptoPeculado = document.getElementById(
+  'contents-title-concepto-peculado'
+)
+const $titleMalversacionIcon = document.getElementById(
+  'title-malversacion-icon'
+)
+const $contentsTitleMalversacion = document.getElementById(
+  'contents-title-malversacion'
+)
+const $titleConceptoMalversacionIcon = document.getElementById(
+  'title-concepto-malversacion-icon'
+)
+const $contentsTitleConceptoMalversacion = document.getElementById(
+  'contents-title-concepto-malversacion'
+)
+const $titleColusionIcon = document.getElementById('title-colusion-icon')
+const $contentsTitleColusion = document.getElementById(
+  'contents-title-colusion'
+)
+const $titleConceptoColusionIcon = document.getElementById(
+  'title-concepto-colusion-icon'
+)
+const $contentsTitleConceptoColusion = document.getElementById(
+  'contents-title-concepto-colusion'
+)
+const $titleNegociacionIcon = document.getElementById('title-negociacion-icon')
+const $contentsTitleNegociacion = document.getElementById(
+  'contents-title-negociacion'
+)
+const $titleConceptoNegociacionIcon = document.getElementById(
+  'title-concepto-negociacion-icon'
+)
+const $contentsTitleConceptoNegociacion = document.getElementById(
+  'contents-title-concepto-negociacion'
+)
+const $titleTraficoIcon = document.getElementById('title-trafico-icon')
+const $contentsTitleTrafico = document.getElementById('contents-title-trafico')
+const $titleConceptoTraficoIcon = document.getElementById(
+  'title-concepto-trafico-icon'
+)
+const $contentsTitleConceptoTrafico = document.getElementById(
+  'contents-title-concepto-trafico'
+)
+const $titlePatrocinioIcon = document.getElementById('title-patrocinio-icon')
+const $contentsTitlePatrocinio = document.getElementById(
+  'contents-title-patrocinio'
+)
+const $titleConceptoPatrocinioIcon = document.getElementById(
+  'title-concepto-patrocinio-icon'
+)
+const $contentsTitleConceptoPatrocinio = document.getElementById(
+  'contents-title-concepto-patrocinio'
+)
+const $titleEnriquecimientoIcon = document.getElementById(
+  'title-enriquecimiento-icon'
+)
+const $contentsTitleEnriquecimiento = document.getElementById(
+  'contents-title-enriquecimiento'
+)
+const $titleConceptoEnriquecimientoIcon = document.getElementById(
+  'title-concepto-enriquecimiento-icon'
+)
+const $contentsTitleConceptoEnriquecimiento = document.getElementById(
+  'contents-title-concepto-enriquecimiento'
+)
+const $titleDenuciarIcon = document.getElementById('title-denunciar-icon')
+const $contentsTitleDenuciar = document.getElementById(
+  'contents-title-denunciar'
+)
+const $titleTipoDenunciaIcon = document.getElementById(
+  'title-tipo-denuncia-icon'
+)
+const $contentsTitleTipoDenuncia = document.getElementById(
+  'contents-title-tipo-denuncia'
 )
 
-// Desplegable de Concepto generales
+const $titleEntidadesIcon = document.getElementById('title-entidades-icon')
+const $contentsTitleEntidades = document.getElementById(
+  'contents-title-entidades'
+)
+const $titleDenunciar = document.getElementById('title-denunciar')
+const $titleEntidades = document.getElementById('title-entidades')
+const $titlePrincipal = document.getElementById('title-principal')
+
+// Desplegable de Presentacion
 $titleFirstIcon.addEventListener('click', () => {
   $contentsTitleFirst.classList.toggle('is-active')
   $titleFirst.classList.toggle('title-select')
   $titleFirstIcon.classList.toggle('icon-red')
+
   $contentsTitleSecond.classList.remove('is-active')
   $titleSecond.classList.remove('title-select')
   $titleSecondIcon.classList.remove('icon-red')
+
+  $contentsTitlePrincipales.classList.remove('is-active')
+  $titlePrincipal.classList.remove('title-select')
+  $titlePrincipalesIcon.classList.remove('icon-red')
+
+  $contentsTitleDenuciar.classList.remove('is-active')
+  $titleDenunciar.classList.remove('title-select')
+  $titleDenuciarIcon.classList.remove('icon-red')
+
+  $contentsTitleEntidades.classList.remove('is-active')
+  $titleEntidades.classList.remove('title-select')
+  $titleEntidadesIcon.classList.remove('icon-red')
 })
 
 // Desplegable de Guía de denuncias
@@ -67,19 +170,92 @@ $titleSecondIcon.addEventListener('click', () => {
   $contentsTitleSecond.classList.toggle('is-active')
   $titleSecond.classList.toggle('title-select')
   $titleSecondIcon.classList.toggle('icon-red')
+
   $contentsTitleFirst.classList.remove('is-active')
   $titleFirst.classList.remove('title-select')
   $titleFirstIcon.classList.remove('icon-red')
-})
 
-// Desplegable de Efectos de la corrupción
-$titleEfectoIcon.addEventListener('click', () => {
-  $contentsTitleEfecto.classList.toggle('is-active')
+  $contentsTitlePrincipales.classList.remove('is-active')
+  $titlePrincipal.classList.remove('title-select')
+  $titlePrincipalesIcon.classList.remove('icon-red')
+
+  $contentsTitleDenuciar.classList.remove('is-active')
+  $titleDenunciar.classList.remove('title-select')
+  $titleDenuciarIcon.classList.remove('icon-red')
+
+  $contentsTitleEntidades.classList.remove('is-active')
+  $titleEntidades.classList.remove('title-select')
+  $titleEntidadesIcon.classList.remove('icon-red')
 })
 
 // Desplegable de Principales delitos de corrupción
 $titlePrincipalesIcon.addEventListener('click', () => {
   $contentsTitlePrincipales.classList.toggle('is-active')
+  $titlePrincipal.classList.toggle('title-select')
+  $titlePrincipalesIcon.classList.toggle('icon-red')
+
+  $contentsTitleFirst.classList.remove('is-active')
+  $titleFirst.classList.remove('title-select')
+  $titleFirstIcon.classList.remove('icon-red')
+
+  $contentsTitleSecond.classList.remove('is-active')
+  $titleSecond.classList.remove('title-select')
+  $titleSecondIcon.classList.remove('icon-red')
+
+  $contentsTitleDenuciar.classList.remove('is-active')
+  $titleDenunciar.classList.remove('title-select')
+  $titleDenuciarIcon.classList.remove('icon-red')
+
+  $contentsTitleEntidades.classList.remove('is-active')
+  $titleEntidades.classList.remove('title-select')
+  $titleEntidadesIcon.classList.remove('icon-red')
+})
+
+// Desplegable de ¿Cómo denunciar un acto de corrupción?
+$titleDenuciarIcon.addEventListener('click', () => {
+  console.log('hola')
+  $contentsTitleDenuciar.classList.toggle('active')
+  $titleDenunciar.classList.toggle('title-select')
+  $titleDenuciarIcon.classList.toggle('icon-red')
+
+  $contentsTitleFirst.classList.remove('is-active')
+  $titleFirst.classList.remove('title-select')
+  $titleFirstIcon.classList.remove('icon-red')
+
+  $contentsTitleSecond.classList.remove('is-active')
+  $titleSecond.classList.remove('title-select')
+  $titleSecondIcon.classList.remove('icon-red')
+
+  $contentsTitlePrincipales.classList.remove('is-active')
+  $titlePrincipal.classList.remove('title-select')
+  $titlePrincipalesIcon.classList.remove('icon-red')
+
+  $contentsTitleEntidades.classList.remove('is-active')
+  $titleEntidades.classList.remove('title-select')
+  $titleEntidadesIcon.classList.remove('icon-red')
+
+  $contentsTitleDenuciar.classList.remove('is-active')
+  $titleDenunciar.classList.remove('title-select')
+  $titleDenuciarIcon.classList.remove('icon-red')
+})
+// Desplegable de Entidades del sistema de administración de justicia
+$titleEntidadesIcon.addEventListener('click', () => {
+  $contentsTitleEntidades.classList.toggle('is-active')
+  $titleEntidades.classList.toggle('title-select')
+  $titleEntidadesIcon.classList.toggle('icon-red')
+
+  $contentsTitleFirst.classList.remove('is-active')
+  $titleFirst.classList.remove('title-select')
+  $titleFirstIcon.classList.remove('icon-red')
+
+  $contentsTitleSecond.classList.remove('is-active')
+  $titleSecond.classList.remove('title-select')
+  $titleSecondIcon.classList.remove('icon-red')
+})
+
+// Desplegable de Efectos de la corrupción
+$titleEfectoIcon.addEventListener('click', () => {
+  $contentsTitleEfecto.classList.toggle('is-active')
 })
 
 // Desplegable de Cohecho
@@ -119,4 +295,64 @@ $titleConceptoConcusionIcon.addEventListener('click', () => {
 //  Desplegable Concusion
 $titleConcusionIcon.addEventListener('click', () => {
   $contentsTitleConcusion.classList.toggle('is-active')
+})
+//  Desplegable Peculado
+$titlePeculadoIcon.addEventListener('click', () => {
+  $contentsTitlePeculado.classList.toggle('is-active')
+})
+//  Desplegable Concepto Peculado
+$titleConceptoPeculadoIcon.addEventListener('click', () => {
+  $contentsTitleConceptoPeculado.classList.toggle('is-active')
+})
+//  Desplegable Malversacion
+$titleMalversacionIcon.addEventListener('click', () => {
+  $contentsTitleMalversacion.classList.toggle('is-active')
+})
+//  Desplegable Concepto Malversacion
+$titleConceptoMalversacionIcon.addEventListener('click', () => {
+  $contentsTitleConceptoMalversacion.classList.toggle('is-active')
+})
+//  Desplegable colusion
+$titleColusionIcon.addEventListener('click', () => {
+  $contentsTitleColusion.classList.toggle('is-active')
+})
+//  Desplegable Concepto colusion
+$titleConceptoColusionIcon.addEventListener('click', () => {
+  $contentsTitleConceptoColusion.classList.toggle('is-active')
+})
+//  Desplegable Negociacion
+$titleNegociacionIcon.addEventListener('click', () => {
+  $contentsTitleNegociacion.classList.toggle('is-active')
+})
+//  Desplegable Concepto negociacion
+$titleConceptoNegociacionIcon.addEventListener('click', () => {
+  $contentsTitleConceptoNegociacion.classList.toggle('is-active')
+})
+//  Desplegable Trafico
+$titleTraficoIcon.addEventListener('click', () => {
+  $contentsTitleTrafico.classList.toggle('is-active')
+})
+//  Desplegable Concepto Trafico
+$titleConceptoTraficoIcon.addEventListener('click', () => {
+  $contentsTitleConceptoTrafico.classList.toggle('is-active')
+})
+//  Desplegable Patrocinio
+$titlePatrocinioIcon.addEventListener('click', () => {
+  $contentsTitlePatrocinio.classList.toggle('is-active')
+})
+//  Desplegable Concepto Patrocinio
+$titleConceptoPatrocinioIcon.addEventListener('click', () => {
+  $contentsTitleConceptoPatrocinio.classList.toggle('is-active')
+})
+//  Desplegable Enriquecimiento
+$titleEnriquecimientoIcon.addEventListener('click', () => {
+  $contentsTitleEnriquecimiento.classList.toggle('is-active')
+})
+//  Desplegable Concepto Enriquecimiento
+$titleConceptoEnriquecimientoIcon.addEventListener('click', () => {
+  $contentsTitleConceptoEnriquecimiento.classList.toggle('is-active')
+})
+//  Desplegable Tipo denuncia
+$titleTipoDenunciaIcon.addEventListener('click', () => {
+  $contentsTitleTipoDenuncia.classList.toggle('is-active')
 })

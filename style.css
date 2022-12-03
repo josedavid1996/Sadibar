@@ -120,6 +120,10 @@ li {
     display: block;
     transition: display 2s;
   }
+  .active {
+    display: block;
+    transition: display 2s;
+  }
 }
 .group-text-icon {
   display: flex;
@@ -127,6 +131,10 @@ li {
   align-items: center;
 }
 .is-active {
+  display: block;
+  transition: display 2s;
+}
+.active {
   display: block;
   transition: display 2s;
 }
