@@ -4,23 +4,31 @@ const $titleSecond = document.getElementById('title-second')
 const $titleSecondIcon = document.getElementById('title-second-icon')
 const $contentsTitleFirst = document.getElementById('contents-title-first')
 const $contentsTitleSecond = document.getElementById('contents-title-second')
-const $subtitleFirstIcon = document.getElementById('subtitle-first-icon')
-const $contentsSubtitleFirst = document.getElementById(
-  'contents-subtitle-first'
-)
+const $titleEfectoIcon = document.getElementById('title-efecto-icon')
+const $contentsTitleEfecto = document.getElementById('contents-title-efecto')
 const $subtitleSecond = document.getElementById('subtitle-second')
-const $subtitleSecondIcon = document.getElementById('subtitle-second-icon')
-const $contentsSubtitleSecond = document.getElementById(
-  'contents-subtitle-second'
+const $titlePrincipalesIcon = document.getElementById('title-princiales-icon')
+const $contentsTitlePrincipales = document.getElementById(
+  'contents-title-princiales'
 )
-const $subtitleThird = document.getElementById('subtitle-third')
-const $subtitleThirdIcon = document.getElementById('subtitle-third-icon')
-const $contentsSubtitleThird = document.getElementById(
-  'contents-subtitle-third'
-)
-const $subtitleFirst = document.getElementById('subtitle-first')
 
-// Menu de Concepto generales
+const $titleCohechoIcon = document.getElementById('title-cohecho-icon')
+const $contentsTitleCohecho = document.getElementById('contents-title-cohecho')
+
+const $titlePresentacionIcon = document.getElementById(
+  'title-presentacion-icon'
+)
+const $contentsTitlePresentacion = document.getElementById(
+  'contents-title-presentacion'
+)
+const $titleConfianzaIcon = document.getElementById('title-confianza-icon')
+const $contentsTitleConfianza = document.getElementById(
+  'contents-title-confianza'
+)
+const $titleEsferasIcon = document.getElementById('title-esferas-icon')
+const $contentsTitleEsfera = document.getElementById('contents-title-esfera')
+
+// Desplegable de Concepto generales
 $titleFirstIcon.addEventListener('click', () => {
   $contentsTitleFirst.classList.toggle('is-active')
   $titleFirst.classList.toggle('title-select')
@@ -30,7 +38,7 @@ $titleFirstIcon.addEventListener('click', () => {
   $titleSecondIcon.classList.remove('icon-red')
 })
 
-// Menu de Guía de denuncias
+// Desplegable de Guía de denuncias
 $titleSecondIcon.addEventListener('click', () => {
   $contentsTitleSecond.classList.toggle('is-active')
   $titleSecond.classList.toggle('title-select')
@@ -40,17 +48,31 @@ $titleSecondIcon.addEventListener('click', () => {
   $titleFirstIcon.classList.remove('icon-red')
 })
 
-// Menu de Efectos de la corrupción
-$subtitleFirstIcon.addEventListener('click', () => {
-  $contentsSubtitleFirst.classList.toggle('is-active')
+// Desplegable de Efectos de la corrupción
+$titleEfectoIcon.addEventListener('click', () => {
+  $contentsTitleEfecto.classList.toggle('is-active')
 })
 
-// Menu de Principales delitos de corrupción
-$subtitleSecondIcon.addEventListener('click', () => {
-  $contentsSubtitleSecond.classList.toggle('is-active')
+// Desplegable de Principales delitos de corrupción
+$titlePrincipalesIcon.addEventListener('click', () => {
+  $contentsTitlePrincipales.classList.toggle('is-active')
 })
 
-// Menu de Cohecho
-$subtitleThirdIcon.addEventListener('click', () => {
-  $contentsSubtitleThird.classList.toggle('is-active')
+// Desplegable de Cohecho
+$titleCohechoIcon.addEventListener('click', () => {
+  $contentsTitleCohecho.classList.toggle('is-active')
+})
+// Desplegable de Presentacion
+$titlePresentacionIcon.addEventListener('click', () => {
+  $contentsTitlePresentacion.classList.toggle('is-active')
+})
+
+// Desplegable de En la confianza en las instituciones políticas
+$titleConfianzaIcon.addEventListener('click', () => {
+  $contentsTitleConfianza.classList.toggle('is-active')
+})
+
+// Desplegable En otras esferas
+$titleEsferasIcon.addEventListener('click', () => {
+  $contentsTitleEsfera.classList.toggle('is-active')
 })
